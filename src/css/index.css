@@ -1,0 +1,296 @@
+/* common.css */
+.clearfix:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.m1170{
+    width: 1170px;
+    margin: 0 auto;
+}
+.arrowright{
+    display: inline-block;
+    width: 4px;
+    height: 7px;
+    margin-right: 4px;
+    background: url(../assets/arrow.png) no-repeat;
+}
+.arrowdown{
+    display: inline-block;
+    width: 4px;
+    height: 7px;
+    margin-right: 4px;
+    transform:rotate(90deg);
+    background: url(../assets/arrow.png) no-repeat;
+}
+
+/* nav */
+nav{
+    height: 80px;
+    background: url(../assets/navbar-bg.png) repeat-x;
+}
+.logo{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 80px;
+    height: 80px;
+    color: #fff;
+}
+.logo strong{
+    font-size: 22px;
+}
+
+nav .list{
+    padding-top: 25px;
+}
+nav .list > li{
+    margin-right: 14px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 3px solid #76c7c0;
+}
+nav .list > li.active{
+    background: #62a29e;
+    border-radius: 4px;
+    border-bottom: 3px solid #528b86;
+}
+nav .list > li.active.search{
+    background: transparent;
+    border-radius: 0px;
+    border-bottom: 0px;
+}
+nav .list > li a{
+    display: inline-block;
+    padding: 0 12px;
+    color: #fff;
+}
+nav .list li.search a{
+    background: url(../assets/search-btn.png) no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: -2px;
+}
+nav .list li.search input{
+    background: rgb(241, 235, 235);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 10px;
+    display: none;
+    margin-top: 6px;
+}
+nav .list li.haschild{
+    background: #e8645a;
+    border-radius: 4px;
+    border-bottom: 3px solid #e2534b;
+    position: relative;
+}
+nav .list li.haschild.active .arrowdown{
+    transform:rotate(270deg);
+}
+
+nav .list li.haschild .childList{
+    padding: 5px;
+    border-radius: 4px;
+    background: #e2534b;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 250px;
+    display: none;
+}
+nav .list li.haschild.active .childList{
+    display: block;
+}
+nav .list .childList .arrowtop{
+    position: absolute;
+    top: -6px;
+    left: 12px;
+    width: 12px;
+    height: 6px;
+    background: url(../assets/arrow-top.png) no-repeat;
+}
+nav .list li.haschild .childList > li{
+    background: #e5655d;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 0 12px;
+}
+nav .list li.haschild .childList > li.active{
+    background: #76c7c0;
+}
+nav .list li.haschild .childList > li:last-child{
+    margin-bottom: 0;
+}
+/* banner */
+#banner{
+    height: 500px;
+    background: #7f8c8c;
+    position: relative;
+}
+#banner .directicon{
+    position: absolute;
+    width:50px;
+    height: 60px;
+    opacity:.8;
+    cursor: pointer;
+}
+#banner .directicon:hover{
+    opacity: 1;
+}
+#banner .pre{
+    left: 0;
+    top: 220px;
+    background: url(../assets/preicon.png) no-repeat; 
+}
+#banner .nxt{
+    right: 0;
+    top: 220px;
+    background: url(../assets/preicon.png) no-repeat; 
+    transform: rotate(180deg)
+}   
+#banner section{
+    text-align:center;
+    padding-top:160px;
+}
+#banner .title{
+    display: inline-block;
+    font-size: 36px;
+    color: #fff;
+    background: #e2534b;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 12px;
+    border-radius: 6px;
+    letter-spacing: 2px;
+}
+#banner .intro{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 6px;
+    color: #fff;
+    background: #3f4646;
+    width: 470px;
+}
+#dotlistbox{
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 24px;
+    background: #f3f3f3;
+}
+#dotlistbox .dotlist{
+    display: inline-block;
+}
+#dotlistbox .dotlist > li{
+    background:#b0b8b9;
+    width: 60px;
+    margin-right: 10px;
+    height: 5px;
+}
+#dotlistbox .dotlist > li.active{
+    background:#e2534b;
+}
+#service{
+    background: #f3f3f3;
+}
+#service .head{
+    padding-top: 24px;
+    padding-bottom: 17px;
+    background: #ececec;
+    border-radius: 6px;
+}
+#service .head .infor{
+    display: inline-block;
+    width: 830px;
+    margin-left: 28px;
+}
+#service .head .infor .title{
+    font-size: 30px;
+    color: #7f8c8c;
+    font-weight: bold;
+}
+#service .head .infor .intro{
+    line-height:27px;
+    font-size: 12px;
+    color: #777777;
+}
+#service .head .viewmore{
+    display: inline-block;
+    background: #e8645a;
+    border-radius: 4px;
+    border-bottom: 4px solid #e2534b;
+}
+#service .head .viewmore a{
+    display: inline-block;
+    padding: 16px 44px;
+    color: #f9dfdd;
+}
+#service .listbox{
+    margin-top: 50px;
+}
+#service .listbox li{
+    float: left;
+    width: 270px;
+    border-radius: 6px;
+    border-bottom: 4px solid #e5e6e6;
+    background:#f8f8f8;
+    padding-top: 48px;
+    margin-right: 30px;
+}
+#service .listbox li:last-child{
+    margin-right: 0;
+}
+
+#service .listbox li .icon{
+    text-align: center;
+}
+#service .listbox li .content{
+    height: 203px;
+    text-align: center;
+    position: relative;
+}
+#service .listbox li .content .title{
+    height: 42px;
+    line-height: 42px;
+    font-size: 12px;
+    color: #7f8c8c;
+    font-weight: bold;
+}
+#service .listbox li .content .intro{
+    margin-top: 17px;
+    line-height: 22px;
+    color: #777777;
+    font-size: 8px;    
+}
+#service .listbox li .content .more{
+    position: absolute;
+    left: 35px;
+    bottom:-28px;
+    display: inline-block;
+    background: #76c7c0;
+    border-radius: 4px;
+    border-bottom: 4px solid #62b9b0;
+    height:50px;
+    line-height: 50px;
+}
+#service .listbox li .content .more a{
+    display: inline-block;
+    padding: 0 65px;
+    color: #fff;
+    font-size: 16px;
+}
+/* 激活状态 */
+#service .listbox li.active .content .more{
+    background: #e8645a;
+    border-bottom: 4px solid #e2534b;
+}

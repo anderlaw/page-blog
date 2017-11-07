@@ -294,3 +294,31 @@ nav .list li.haschild .childList > li:last-child{
     background: #e8645a;
     border-bottom: 4px solid #e2534b;
 }
+#whychose{
+    background: #ececec;
+    position: relative;
+}
+#whychose .bg-bar{
+    background: url(../assets/why-bar.jpg) repeat-x;
+    height: 17px;
+}
+#whychose .word{
+    height: 380px;
+    box-sizing: border-box;
+    padding-top: 54px;
+    text-align: center;
+}
+#whychose .word .title{
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 16px;
+}
+#whychose .word .intro{
+    color:#777777;
+    font-size:12px;
+}
+#whychose .picture{
+    position: absolute;
+    bottom: -160px;
+}

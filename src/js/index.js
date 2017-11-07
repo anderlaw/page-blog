@@ -64,4 +64,14 @@
         //显示按钮
         searBtn.style.display = 'inline-block';
     }
+    ///设置 图片的居中显示
+    let picCenterEle = document.querySelector('#whychose .picture');
+    window.onresize = function(){
+        //获取视口宽度
+        let viewWidth = document.body.clientWidth;
+        //宽度为1170
+        let left = (viewWidth-1170)/2;
+        picCenterEle.style.left = left;
+        debugger
+    }
 })()

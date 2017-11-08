@@ -296,7 +296,7 @@ nav .list li.haschild .childList > li:last-child{
 }
 #whychose{
     background: #ececec;
-    position: relative;
+
 }
 #whychose .bg-bar{
     background: url(../assets/why-bar.jpg) repeat-x;
@@ -307,6 +307,7 @@ nav .list li.haschild .childList > li:last-child{
     box-sizing: border-box;
     padding-top: 54px;
     text-align: center;
+    position: relative;
 }
 #whychose .word .title{
     font-size: 28px;
@@ -321,4 +322,37 @@ nav .list li.haschild .childList > li:last-child{
 #whychose .picture{
     position: absolute;
     bottom: -160px;
+    width: 1182px;
+}
+
+section.chose .list{
+    width: 300px;
+}
+section.chose .list h3{
+    color:#7f8c8c;
+    font-size:16px;
+    margin-bottom: 36px;
+}
+section.chose .list .listicon-red{
+    width: 10px;
+    height: 12px;
+    margin-right:6px;
+    display: inline-block;
+    background: url(../assets/listicon-red.jpg) no-repeat;
+}
+section.chose .dashboard{
+    float: left;
+    width: 570px;
+}
+section.chose .dashboard p{
+    line-height:22px;
+    font-size: 12px;
+    color: #777777;
+}
+section.chose .dashboard img{
+    margin-right: 24px;
+
+}
+section.chose .dashboard img:last-child{
+    margin-right: 0;
 }
